@@ -25,7 +25,7 @@ requirements:
     - setuptools
   run:
     - cloudpickle >2.2
-    - dask >=2022.12.1,<=2025.5.1
+    - dask >=2022.12.1,<=2025.11.0
     - dask-jobqueue >=0.8,<1.0
     - h5py >=3,<4
     - numpy >=1.0,<3.0
