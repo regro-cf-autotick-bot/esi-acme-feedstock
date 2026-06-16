@@ -5,7 +5,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
@@ -25,13 +25,13 @@ requirements:
     - setuptools
   run:
     - cloudpickle >2.2
-    - dask >=2022.12.1,<=2025.11.0
+    - dask >=2022.12.1,<=2026.6.0
     - dask-jobqueue >=0.8,<1.0
     - h5py >=3,<4
     - numpy >=1.0,<3.0
     - pip
     - psutil
-    - python >={{ python_min }},<3.14
+    - python >={{ python_min }},<3.15
     - toolz >=0.12
     - tqdm >=4.31
 
